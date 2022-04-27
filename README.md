@@ -58,3 +58,5 @@
 "method": "DELETE",
 "url": "http://localhost:8080/api/v1/item/6269928bcff1cd692e83faef"
 ```
+
+### By @paradocx96
