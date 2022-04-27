@@ -59,4 +59,9 @@
 "url": "http://localhost:8080/api/v1/item/6269928bcff1cd692e83faef"
 ```
 
+### Postman Endpoints
+```
+Link: https://www.getpostman.com/collections/436e616bcf6106037cf2
+```
+
 ### By @paradocx96
