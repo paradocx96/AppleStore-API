@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MADD API</title>
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tg td {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-0lax {
+            text-align: left;
+            vertical-align: top
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h1>MADD Assignment 3 Backend API</h1>
+</center>
+<h3>Endpoint URL</h3>
+<h4>Local: <a href="http://localhost:8080" target="_blank">http://localhost:8080</a></h4>
+<h4>Remote: <a href="https://madd-assignment3.herokuapp.com" target="_blank">https://madd-assignment3.herokuapp.com</a>
+</h4>
+<table class="tg">
+    <thead>
+    <tr>
+        <th class="tg-0lax">Endpoint</th>
+        <th class="tg-0lax">Method</th>
+        <th class="tg-0lax">URL</th>
+        <th class="tg-0lax">Body</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="tg-0lax">Get All</td>
+        <td class="tg-0lax">GET</td>
+        <td class="tg-0lax">/api/v1/item/</td>
+        <td class="tg-0lax">-</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Get By ID</td>
+        <td class="tg-0lax">GET</td>
+        <td class="tg-0lax">/api/v1/item/{{item-id}}</td>
+        <td class="tg-0lax">-</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Get By Type</td>
+        <td class="tg-0lax">GET</td>
+        <td class="tg-0lax">/api/v1/item/byType/{{item-type}}</td>
+        <td class="tg-0lax">-</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Create</td>
+        <td class="tg-0lax">POST</td>
+        <td class="tg-0lax">/api/v1/item/</td>
+        <td class="tg-0lax">{<br><br> "name": "iPhone 12", <br><br> "code": "120100", <br><br> "availableUnit": 10, <br><br>
+            "price": 699.99, <br><br> "taxPrice": 799.99, <br><br> "productDescription": "This is the sample
+            desccription for item.", <br><br> "imagePath": "iphone12.jpg",<br><br> "type": "New"<br><br>}
+        </td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Update</td>
+        <td class="tg-0lax">PUT</td>
+        <td class="tg-0lax">/api/v1/item/</td>
+        <td class="tg-0lax">{<br><br> "id":"6269928bcff1cd692e83faef",<br><br> "name": "iPhone 12", <br><br> "code":
+            "120100", <br><br> "availableUnit": 10, <br><br> "price": 699.99, <br><br> "taxPrice": 799.99, <br><br>
+            "productDescription": "This is the sample desccription for item.", <br><br> "imagePath": "iphone12.jpg",<br><br>
+            "type": "New"<br><br>}
+        </td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Delete By Id</td>
+        <td class="tg-0lax">DELETE</td>
+        <td class="tg-0lax">/api/v1/item/{{item-id}}</td>
+        <td class="tg-0lax">-</td>
+    </tr>
+    </tbody>
+</table>
+<footer>
+    <center>MADE WITH ❤ BY @paradocx96</center>
+</footer>
+</body>
+</html>
